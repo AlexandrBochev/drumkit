@@ -299,7 +299,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 5px;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 .drumkit__pad {
   display: flex;
