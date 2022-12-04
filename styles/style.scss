@@ -1,0 +1,31 @@
+@import "./normalize.scss";
+
+body {
+  height: 100vh;
+  margin: 5px;
+  background: linear-gradient(120deg, #1E1E1E 0%, #373737 50%, #1E1E1E 100%);
+}
+
+.drumkit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  &__pad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 calc(33.333% - 20px);
+    margin: 10px;
+    background: radial-gradient(#373737, #1E1E1E);
+    border-radius: 10px;
+    img {
+      width: 140px;
+      height: 140px;
+      pointer-events: none;
+    }
+    &:active {
+      background: radial-gradient(#4f4f4f, #1E1E1E);
+    }
+  }
+}
